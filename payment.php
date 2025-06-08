@@ -455,7 +455,7 @@
 
         function goBack() {
             // Redirect to homepage.php
-            window.location.href = 'homepage.php';
+            window.location.href = 'seats.php';
         }
 
         // Close modal and redirect to homepage

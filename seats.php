@@ -620,8 +620,12 @@
         }
 
         function proceedToPayment() {
-            // Redirect to payment.php
-            window.location.href = 'payment.php';
+            const totalPrice = selectedSeats.length * TICKET_PRICE;
+
+        // Save to sessionStorage (optional fallback)
+        sessionStorage.setItem('totalAmount', totalPrice);
+        // Redirect to payment.php with total in URL
+        window.location.href = `payment.php?total=${totalPrice}`;
         }
 
         // Close modal when clicking outside of it
@@ -643,6 +647,8 @@
 
         // Initialize display
         updateDisplay();
+
+       
     </script>
 </body>
 </html>
