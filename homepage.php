@@ -50,18 +50,21 @@
         .movies-grid {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            gap: 15px;
-            padding: 20px;
+            gap: 30px;
+            padding: 30px;
             background-color: white;
             border-radius: 0 0 8px 8px;
         }
 
         .movie-card {
-            background-color: #f8f8f8;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             transition: transform 0.3s;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .movie-card:hover {
@@ -70,7 +73,7 @@
 
         .movie-poster {
             width: 100%;
-            height: 180px;
+            height: 220px;
             background: linear-gradient(45deg, #FF6B35, #F7931E);
             display: flex;
             align-items: center;
@@ -81,14 +84,17 @@
             text-align: center;
         }
 
-        .movie-info {
+       .movie-info {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
             padding: 10px;
         }
 
-        .movie-buttons {
+     .movie-buttons {
             display: flex;
-            gap: 5px;
-            margin-bottom: 8px;
+            justify-content: flex-end; 
+            margin-top: auto;          
         }
 
         .btn-small {
@@ -108,6 +114,12 @@
        
 
         .movie-name {
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .showing-time {
             font-size: 12px;
             font-weight: bold;
             color: #333;
@@ -143,104 +155,115 @@
 
             <div class="movies-grid">
                 <div class="movie-card">
-                    <div class="movie-poster">GO-GOD BALLERINA</div>
+                     <img src="images/1.jpg" alt="Final Destination Bloodlines" class="movie-poster">
                     <div class="movie-info">
+                        <div class="movie-name">Final Destination Bloodlines</div>
+                         <div class="showing-time">June 9, 2025 9:00 AM</div>
                         <div class="movie-buttons">
                             <a href="register.php" class="btn-small btn-buy">Book Now</a>
                         </div>
-                        <div class="movie-name">GO-GOD BALLERINA</div>
                     </div>
                 </div>
 
-                <div class="movie-card">
-                    <div class="movie-poster">4DX GLADIATOR FINAL DESTINY</div>
+               <div class="movie-card">
+                     <img src="images/2.jpg" alt="Lilo & Stitch" class="movie-poster">
                     <div class="movie-info">
+                        <div class="movie-name">Lilo & Stitch</div>
+                         <div class="showing-time">June 9, 2025 6:00 PM</div>
                         <div class="movie-buttons">
-                            <button class="btn-small btn-buy">Book Now</button>
-                        </div>
-                        <div class="movie-name">4DX GLADIATOR FINAL DESTINY</div>
+                            <a href="register.php" class="btn-small btn-buy">Book Now</a>
+                        </div> 
                     </div>
                 </div>
 
-                <div class="movie-card">
-                    <div class="movie-poster">LEO A-GIANT LILO & STITCH</div>
+               <div class="movie-card">
+                     <img src="images/3.jpg" alt="Lost in Starlight" class="movie-poster">
                     <div class="movie-info">
+                        <div class="movie-name">Lost in Starlight</div>
+                         <div class="showing-time">June 9, 2025 3:00 PM</div>
                         <div class="movie-buttons">
-                            <button class="btn-small btn-buy">Book Now</button>
-                        </div>
-                        <div class="movie-name">LEO A-GIANT LILO & STITCH</div>
+                            <a href="register.php" class="btn-small btn-buy">Book Now</a>
+                        </div> 
                     </div>
                 </div>
 
-                <div class="movie-card">
-                    <div class="movie-poster">A-GIANT BALLERINA</div>
+                 <div class="movie-card">
+                     <img src="images/4.jpg" alt="From the World of John Wick: Ballerina" class="movie-poster">
                     <div class="movie-info">
+                        <div class="movie-name">From the World of John Wick: Ballerina</div>
+                         <div class="showing-time">June 9, 2025 11:00 AM</div>
                         <div class="movie-buttons">
-                            <button class="btn-small btn-buy">Book Now</button>
-                        </div>
-                        <div class="movie-name">A-GIANT BALLERINA</div>
+                            <a href="register.php" class="btn-small btn-buy">Book Now</a>
+                        </div> 
                     </div>
                 </div>
 
-                <div class="movie-card">
-                    <div class="movie-poster">4D-UXX BALLERINA</div>
+                  <div class="movie-card">
+                     <img src="images/5.jpg" alt="Karate Kid: Legends" class="movie-poster">
                     <div class="movie-info">
+                        <div class="movie-name">Karate Kid: Legends</div>
+                         <div class="showing-time">June 10, 2025 9:00 AM</div>
                         <div class="movie-buttons">
-                            <button class="btn-small btn-buy">Book Now</button>
-                        </div>
-                        <div class="movie-name">4D-UXX BALLERINA</div>
+                            <a href="register.php" class="btn-small btn-buy">Book Now</a>
+                        </div> 
                     </div>
                 </div>
 
-                <div class="movie-card">
-                    <div class="movie-poster">ALVARO DON'T SLEEP</div>
+                  <div class="movie-card">
+                     <img src="images/6.jpg" alt="How to Train Your Dragon" class="movie-poster">
                     <div class="movie-info">
+                        <div class="movie-name">How to Train Your Dragon</div>
+                         <div class="showing-time">June 10, 2025 12:00 PM</div>
                         <div class="movie-buttons">
-                            <button class="btn-small btn-buy">Book Now</button>
-                        </div>
-                        <div class="movie-name">ALVARO DON'T SLEEP</div>
+                            <a href="register.php" class="btn-small btn-buy">Book Now</a>
+                        </div> 
                     </div>
                 </div>
 
-                <div class="movie-card">
-                    <div class="movie-poster">ALVARO FINAL DESTINY</div>
+                     <div class="movie-card">
+                     <img src="images/7.jpg" alt="Thunderbolts*" class="movie-poster">
                     <div class="movie-info">
+                        <div class="movie-name">Thunderbolts*</div>
+                         <div class="showing-time">June 10, 2025 3:00 PM</div>
                         <div class="movie-buttons">
-                            <button class="btn-small btn-buy">Book Now</button>
-                        </div>
-                        <div class="movie-name">ALVARO FINAL DESTINY</div>
+                            <a href="register.php" class="btn-small btn-buy">Book Now</a>
+                        </div> 
                     </div>
                 </div>
 
-                <div class="movie-card">
-                    <div class="movie-poster">A-LUXE LILO & STITCH</div>
+                     <div class="movie-card">
+                     <img src="images/8.jpg" alt="Fear Street: Prom Queen" class="movie-poster">
                     <div class="movie-info">
+                        <div class="movie-name">Fear Street: Prom Queen</div>
+                         <div class="showing-time">June 10, 2025 6:00 PM</div>
                         <div class="movie-buttons">
-                            <button class="btn-small btn-buy">Book Now</button>
-                        </div>
-                        <div class="movie-name">A-LUXE LILO & STITCH</div>
+                            <a href="register.php" class="btn-small btn-buy">Book Now</a>
+                        </div> 
                     </div>
                 </div>
 
-                <div class="movie-card">
-                    <div class="movie-poster">A-LUXE MISSION: (IMOC)</div>
+                  <div class="movie-card">
+                     <img src="images/9.jpg" alt="Last Bullet" class="movie-poster">
                     <div class="movie-info">
+                        <div class="movie-name">Last Bullet</div>
+                         <div class="showing-time">June 11, 2025 9:00 AM</div>
                         <div class="movie-buttons">
-                            <button class="btn-small btn-buy">Book Now</button>
-                        </div>
-                        <div class="movie-name">A-LUXE MISSION: (IMOC)</div>
+                            <a href="register.php" class="btn-small btn-buy">Book Now</a>
+                        </div> 
                     </div>
                 </div>
 
-                <div class="movie-card">
-                    <div class="movie-poster">ATMOS BALLERINA</div>
+                 <div class="movie-card">
+                     <img src="images/10.jpg" alt="The Boy, the Mole, the Fox and the Horse" class="movie-poster">
                     <div class="movie-info">
+                        <div class="movie-name">The Boy, the Mole, the Fox and the Horse</div>
+                         <div class="showing-time">June 11, 2025 1:00 PM</div>
                         <div class="movie-buttons">
-                            <button class="btn-small btn-buy">Book Now</button>
-                        </div>
-                        <div class="movie-name">ATMOS BALLERINA</div>
+                            <a href="register.php" class="btn-small btn-buy">Book Now</a>
+                        </div> 
                     </div>
                 </div>
+
             </div>
         </main>
     </div>
